@@ -14,5 +14,5 @@ RUN npm install -g serverless
 RUN ls -la /usr/local/bin
 RUN find / -iname "pip*"
 
-RUN pip-3 install --no-cache-dir --upgrade pip pipenv && \
-  pip-2 install --no-cache-dir --upgrade pip pipenv
+RUN pip-3 install --no-cache-dir --upgrade pip pipenv awscli && \
+  pip-2 install --no-cache-dir --upgrade pip pipenv awscli
