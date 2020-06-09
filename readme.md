@@ -7,5 +7,6 @@ Includes the basic requirements:
 * Python (2.7 & 3.7)
 * Pip
 * Pipenv
+* Awscli
 
 Intended for use with Bamboo.
