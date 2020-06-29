@@ -4,7 +4,7 @@ FROM amazonlinux
 # Install GCC, Make, NodeJS and findutils
 # Clean-up after ourselves
 RUN curl --silent --location https://rpm.nodesource.com/setup_10.x | bash - && \
-  yum install -y python3-pip python3-devel python2-devel python2-pip gcc-c++ make nodejs findutils git && \
+  yum install -y python3-pip python3-devel python2-devel python2-pip gcc-c++ make nodejs findutils git tar && \
   yum clean all && rm -rf /var/cache/yum
 
 # Install the serverless framework globally
