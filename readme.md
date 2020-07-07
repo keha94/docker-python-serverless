@@ -7,6 +7,13 @@ Includes the basic requirements:
 * Python (2.7 & 3.7)
 * Pip
 * Pipenv
+* Poetry
 * Awscli
 
 Intended for use with Bamboo.
+
+To build and push:
+```bash
+docker build -t keha94/docker-python-serverless:{TAG} .
+docker push keha94/docker-python-serverless:{TAG}
+```
