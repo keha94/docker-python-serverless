@@ -1,9 +1,9 @@
 FROM amazonlinux
-# Make able to install Node 10 from upstream
+# Make able to install Node 14 from upstream
 # Install Python3.7 and Python2.7 with pip and devel
 # Install GCC, Make, NodeJS and findutils
 # Clean-up after ourselves
-RUN curl --silent --location https://rpm.nodesource.com/setup_10.x | bash - && \
+RUN curl --silent --location https://rpm.nodesource.com/setup_14.x | bash - && \
   yum install -y python3-pip python3-devel python2-devel python2-pip gcc-c++ make nodejs findutils git tar && \
   curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 - && \
   yum clean all && rm -rf /var/cache/yum
