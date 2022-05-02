@@ -11,7 +11,7 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_14.x | bash - && \
 ENV PATH="${PATH}:/root/.poetry/bin"
 
 # Install the serverless framework globally
-RUN npm install -g serverless
+RUN npm install -g serverless@2
 
 # Install/upgrade pip, pipenv, for both Python 2.7 and Python 3.7
 RUN ls -la /usr/local/bin
